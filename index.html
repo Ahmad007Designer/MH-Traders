@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MH Traders - Custom Printing & Personalized Products | Jaisi Jarurat Waisi Seva</title>
+    <meta name="description" content="MH Traders offers custom printing services including photo printing, T-shirts, mugs, banners, and personalized gifts. Professional quality with creative designs.">
+    <meta name="keywords" content="custom printing, photo printing, T-shirt printing, mug printing, personalized gifts, election banners, poster design">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- header -->
+    <div id="header"></div>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-75">
+        
+        <!-- Left Content -->
+        <div class="col-lg-6  mb-4 mb-md-0">
+            <div class="hero-content text-center">
+            
+            <!-- Rating -->
+            <div class="rating-badge mb-4 justify-content-center">
+                <div class="stars">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <small class="text-muted ms-2">Trusted by 1000+ customers</small>
+            </div>
+
+            <!-- Title -->
+            <h1 class="display-5 fw-bold mb-4">
+                Custom Printing
+                <span class="d-block" style="color:var(--primary-color)">Made Perfect</span>
+            </h1>
+
+            <!-- Description -->
+            <p class="lead mb-4">
+                From business cards to banners, we bring your ideas to life with premium quality printing services.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-buttons mb-5">
+                <a href="#products" class="btn btn-lg me-2 btn-primary-custom">
+                Explore Now <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+                <a href="#contact" class="btn btn-outline-primary-custom btn-lg mt-3 mt-md-0">Get Quote</a>
+            </div>
+
+            <!-- Counters -->
+            <div class="row text-center">
+                <div class="col-4">
+                <h3 class="text-primary fw-bold counter" data-target="500">0</h3>
+                <small class="text-muted">Products</small>
+                </div>
+                <div class="col-4">
+                <h3 class="text-primary fw-bold counter" data-target="24">0</h3>
+                <small class="text-muted">Quick Delivery</small>
+                </div>
+                <div class="col-4">
+                <h3 class="text-primary fw-bold counter" data-target="100">0</h3>
+                <small class="text-muted">Quality</small>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-lg-6  text-center">
+            <div class="hero-image position-relative">
+            <div class="hero-card bg-white rounded-4 shadow-lg p-3 p-md-4">
+                <img src="assets/images/hero_bg.jpg" alt="Printing Services" class="img-fluid rounded-3">
+            </div>
+            <div class="quality-badge position-absolute">
+                <span class="badge bg-warning text-dark px-3 py-2 fs-6">Best Quality!</span>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </section>
+
+    <a href="#" class="whatsapp-btn" id="whatsapp-btn">
+        &#x1F4AC;
+    </a>
+
+
+
+
+    <!-- Featured Products -->
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Featured Products</h2>
+                <p>Discover our most popular custom printing services and personalized products</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="product-info">
+                        <a href="categories/photo_printing_frame/photo_frame.html">Photo Printing & Frames</a>
+                        <p>High-quality photo prints with beautiful frames and custom collage designs</p>
+                        <div class="product-price">Starting ₹50</div>
+                        <button class="add-to-cart" onclick="addToCart('Photo Printing', 50)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="product-info">
+                        <a>Custom T-Shirt Printing</a>
+                        <p>Personalized T-shirts with your designs, logos, or messages</p>
+                        <div class="product-price">Starting ₹299</div>
+                        <button class="add-to-cart" onclick="addToCart('T-Shirt Printing', 299)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <div class="product-info">
+                        <a>Custom Mug Printing</a>
+                        <p>Personalized mugs perfect for gifts or promotional items</p>
+                        <div class="product-price">Starting ₹199</div>
+                        <button class="add-to-cart" onclick="addToCart('Mug Printing', 199)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="product-info">
+                        <a>Election Banners & Posters</a>
+                        <p>Professional political banners and campaign materials</p>
+                        <div class="product-price">Starting ₹500</div>
+                        <button class="add-to-cart" onclick="addToCart('Banner Printing', 500)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div class="product-info">
+                        <a>Custom Keychains</a>
+                        <p>Personalized keychains with photos, names, or designs</p>
+                        <div class="product-price">Starting ₹99</div>
+                        <button class="add-to-cart" onclick="addToCart('Keychain Printing', 99)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card fade-in">
+                    <div class="product-image">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <div class="product-info">
+                        <a>Custom Pillow Printing</a>
+                        <p>Comfortable pillows with your favorite photos or designs</p>
+                        <div class="product-price">Starting ₹399</div>
+                        <button class="add-to-cart" onclick="addToCart('Pillow Printing', 399)">
+                            <i class="fas fa-plus"></i> Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Services</h2>
+                <p>Professional printing solutions for all your needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Custom Design</h3>
+                    <p>Our creative team helps you design unique and eye-catching prints tailored to your vision</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick turnaround time with reliable delivery service across the region</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>High-quality materials and advanced printing technology for lasting results</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Dedicated customer support to help you with orders and customizations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Tool -->
+    <section id="customize" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Design Your Product</h2>
+                <p>Use our easy-to-use customization tool to create your perfect design</p>
+            </div>
+            
+            <div class="customization-tool fade-in">
+                <div class="tool-header">
+                    <h3>Product Customization Studio</h3>
+                    <p>Select product, upload images, add text, and preview your design</p>
+                </div>
+                
+                <div class="tool-options">
+                    <div class="tool-option active" onclick="selectProduct('tshirt')">
+                        <i class="fas fa-tshirt" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;"></i>
+                        <p>T-Shirt</p>
+                    </div>
+                    <div class="tool-option" onclick="selectProduct('mug')">
+                        <i class="fas fa-mug-hot" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;"></i>
+                        <p>Mug</p>
+                    </div>
+                    <div class="tool-option" onclick="selectProduct('pillow')">
+                        <i class="fas fa-bed" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;"></i>
+                        <p>Pillow</p>
+                    </div>
+                    <div class="tool-option" onclick="selectProduct('keychain')">
+                        <i class="fas fa-key" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;"></i>
+                        <p>Keychain</p>
+                    </div>
+                </div>
+                
+                <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                    <i class="fas fa-cloud-upload-alt" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                    <h4>Upload Your Image</h4>
+                    <p>Drag and drop or click to select files</p>
+                    <input type="file" id="fileInput" multiple accept="image/*" style="display: none;" onchange="handleFileUpload(event)">
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <label for="customText">Add Custom Text:</label>
+                        <input type="text" id="customText" placeholder="Enter your text here..." style="width: 100%; padding: 1rem; border: 2px solid var(--bg-light); border-radius: 10px; margin-top: 0.5rem;">
+                    </div>
+                    <div>
+                        <label for="textColor">Text Color:</label>
+                        <input type="color" id="textColor" value="#ff6b35" style="width: 100%; padding: 1rem; border: 2px solid var(--bg-light); border-radius: 10px; margin-top: 0.5rem;">
+                    </div>
+                </div>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button class="btn btn-primary" onclick="previewDesign()">
+                        <i class="fas fa-eye"></i> Preview Design
+                    </button>
+                    <button class="btn btn-secondary" onclick="addCustomToCart()" style="margin-left: 1rem;">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="section reviews">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>What Our Customers Say</h2>
+                <p>Read testimonials from our satisfied customers</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card fade-in">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Amazing quality prints! Got custom T-shirts for our team and everyone loved them. Fast delivery and excellent customer service."</p>
+                    <div class="review-author">- Priya Sharma</div>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Perfect for election campaign materials! High-quality banners that stood out. MH Traders delivered exactly what we needed."</p>
+                    <div class="review-author">- Rajesh Kumar</div>
+                </div>
+
+                <div class="review-card fade-in">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Beautiful photo frames and collages! They turned our memories into stunning wall art. Highly recommended for personalized gifts."</p>
+                    <div class="review-author">- Anita Singh</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions or need a custom quote? We're here to help!</p>
+                </div>
+        
+                <div class="col-12">
+                    <div class="row contact-section-row" >
+                        <div class="col-md-5 contact-form fade-in">
+                            <h3 style="margin-bottom: 1.5rem;">Send us a Message</h3>
+                            <form onsubmit="submitContactForm(event)">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Enter Your Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service Needed</label>
+                                    <select id="service" name="service"
+                                        style="width: 100%; padding: 1rem; border: 2px solid var(--bg-light); border-radius: 10px;"
+                                        required>
+                                        <option value="">Select a service</option>
+                                        <option value="photo-printing">Photo Printing & Frames</option>
+                                        <option value="tshirt-printing">T-Shirt Printing</option>
+                                        <option value="mug-printing">Mug Printing</option>
+                                        <option value="banner-design">Banner & Poster Design</option>
+                                        <option value="keychain-printing">Keychain Printing</option>
+                                        <option value="pillow-printing">Pillow Printing</option>
+                                        <option value="custom-design">Custom Design</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" rows="5"
+                                        placeholder="Tell us about your project requirements..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary-custom" style="width: 100%;">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div class="col-md-5 contact-info fade-in">
+                            <h3 style="margin-bottom: 1.5rem;">Contact Information</h3>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Address</strong>
+                                    <p>LIG 27C, Subhash Nagar Colony, Surajkund<br>Gorakhnath, Gorakhpur Uttar Pradesh -273015</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <p>+91 7234944612</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p>mohdrock007@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Business Hours</strong>
+                                    <p>Mon - Sun: 7:00 AM - 10:00 PM
+                                </div>
+                            </div>
+                            
+                            <div style="margin-top: 2rem;">
+                                <h4 style="margin-bottom: 1rem;">Follow Us</h4>
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <div id="footer"></div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <i class="fas fa-times cart-close" onclick="toggleCart()"></i>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        
+        <div class="cart-total">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <strong>Total: </strong>
+                <strong id="cartTotal" style="color: var(--primary-color); font-size: 1.2rem;">₹0</strong>
+            </div>
+            <button class="checkout-btn" onclick="proceedToCheckout()">
+                <i class="fas fa-credit-card"></i> Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- Order Tracking Modal -->
+    <!-- <div id="orderModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 3000; display: flex; align-items: center; justify-content: center;">
+        <div style="background: white; padding: 2rem; border-radius: 20px; width: 90%; max-width: 500px; max-height: 80vh; overflow-y: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h3>Track Your Order</h3>
+                <i class="fas fa-times" style="cursor: pointer; font-size: 1.5rem;" onclick="closeModal()"></i>
+            </div>
+            <div>
+                <label for="orderNumber">Order Number:</label>
+                <input type="text" id="orderNumber" placeholder="Enter your order number" style="width: 100%; padding: 1rem; margin: 0.5rem 0 1rem; border: 2px solid var(--bg-light); border-radius: 10px;">
+                <button class="btn btn-primary" onclick="trackOrder()" style="width: 100%;">
+                    <i class="fas fa-search"></i> Track Order
+                </button>
+            </div>
+            <div id="trackingResult" style="margin-top: 2rem;"></div>
+        </div>
+    </div> -->
+
+   
+    <script>
+        fetch("partials/header.html")
+            .then(r => r.text())
+            .then(d => document.getElementById("header").innerHTML = d);
+
+        fetch("partials/footer.html")
+            .then(r => r.text())
+            .then(d => document.getElementById("footer").innerHTML = d);
+    </script>
+    <script>
+        // CHANGE THIS TO YOUR WHATSAPP NUMBER
+        const phoneNumber = "919335537142"; // Replace with your number (with country code, no +)
+        const message = "Hello! I'm interested in your services."; // Your default message
+        
+        document.getElementById('whatsapp-btn').onclick = function() {
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        };
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
