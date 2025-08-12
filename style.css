@@ -23,7 +23,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
-    background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+    /* background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%); */
+    background-color: rgb(228,243,252);
 }
 
 /* Header & Navigation */
@@ -309,9 +310,9 @@ body {
 }
 
 /* Services Section */
-.services {
+/* .services {
     background: var(--bg-light);
-}
+} */
 
 .services-grid {
     display: grid;
@@ -348,6 +349,39 @@ body {
     color: var(--text-light);
     font-size: 0.9rem;
 }
+
+.photo-printing-img  {
+    background-color: #FFF4E6;
+    color: #FF8C42;
+}
+
+.Tshirt-printing-img {
+    background-color: #E6F7FF;
+    color: #1890FF;
+}
+
+.mug-printing-img {
+    background-color: #F9F0FF;
+    color: #722ED1;
+}
+
+.banner-printing-img {
+    background-color: #E8FFE6;
+    color: #389E0D;
+}
+
+.keychain-printing-img {
+    background-color: #FFF8E6;
+    color: #D48806;
+}
+
+.gift-printing-img {
+    background-color: #FFE6EC;
+    color: #EB2F96;
+}
+
+
+
 
 /* Customization Tool */
 .customization-tool {
@@ -836,7 +870,7 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
     width: 100%;
 }
 
@@ -845,24 +879,119 @@ body {
 }
 
 
- .whatsapp-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 30px;
-            color: white;
-            z-index: 1000;
-            transition: transform 0.3s;
-        }
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    color: white;
+}
+.cards_carousel{
+    gap:1rem;
+    justify-content: center;
+}
+.row_cards{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.home_cards_inner{
+    padding: 0 100px 0 100px;
+}
+.home-cards-section{
+    width: 30%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .whatsapp-btn:hover {
-            transform: scale(1.1);
-            color: white;
-        }
+/* +++++++++++++++ cards section */
+.home-product-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+.home-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.home-card-product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 250px;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    /* color: var(--primary-color); */
+    position: relative;
+    overflow: hidden;
+}
+
+.home-card-product-details {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.home-card-category {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.home-card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discount {
+    background: #f5a623;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
